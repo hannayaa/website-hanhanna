@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website HaNna</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <h1>HaNnadesign</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="active">Overview</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <ul class="menu business">
+                <li><a href="#">Shipment</a></li>
+                <li><a href="#">Employee</a></li>
+            </ul>
+            <footer>
+                <p>&copy; HANNADESIGN 2024</p>
+            </footer>
+        </nav>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <header>
+                <input type="text" placeholder="Search for product">
+                <div class="icons">
+                    <span class="bell-icon">🔔</span>
+                    <span class="edit-icon">✏️</span>
+                </div>
+            </header>
+
+            <!-- Overview Section -->
+            <section class="overview">
+                <div class="card">
+                    <h2>Total Sales</h2>
+                    <p>$27,340.00</p>
+                    <span class="percentage">+24%</span>
+                </div>
+                <div class="card">
+                    <h2>Total Expenses</h2>
+                    <p>$7,340.00</p>
+                    <span class="percentage">-32%</span>
+                </div>
+                <div class="card">
+                    <h2>Total Visitors</h2>
+                    <p>18,340</p>
+                    <span class="percentage">+48%</span>
+                </div>
+                <div class="card">
+                    <h2>Total Orders</h2>
+                    <p>11,340</p>
+                    <span class="percentage">-12%</span>
+                </div>
+            </section>
+
+            <!-- Income/Expense Chart -->
+            <section class="chart-section">
+                <h2>Income/Expense</h2>
+                <canvas id="incomeExpenseChart"></canvas>
+            </section>
+
+            <!-- Popular Products Table -->
+            <section class="popular-products">
+                <h2>Popular Products</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Photos</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Brand</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="iphone13.jpg" alt="Iphone 13"></td>
+                            <td>Iphone 13</td>
+                            <td>Apr 12, 2022</td>
+                            <td>Technic</td>
+                            <td>Apple</td>
+                            <td>$99.89</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td><img src="macbook14.jpg" alt="Macbook 14"></td>
+                            <td>Macbook 14</td>
+                            <td>Apr 12, 2022</td>
+                            <td>Technic</td>
+                            <td>Apple</td>
+                            <td>$99.89</td>
+                            <td>Available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Right Sidebar -->
+            <aside class="right-sidebar">
+                <div class="profile">
+                    <h2>ACEDESIGN</h2>
+                </div>
+                <div class="stats">
+                    <p><strong>218</strong> Products</p>
+                    <p><strong>2,580</strong> Followers</p>
+                </div>
+                <div class="reputation">
+                    <h3>Reputation</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 78%;"></div>
+                    </div>
+                    <p>Start Seller 78%</p>
+                </div>
+                <div class="recent-orders">
+                    <h3>Recent Orders</h3>
+                    <ul>
+                        <li>Watch 4x - $1280.00</li>
+                        <li>Macbook 4x - $8080.00</li>
+                        <li>Iphone 4x - $5680.00</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
